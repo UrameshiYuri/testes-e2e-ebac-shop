@@ -3,18 +3,40 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('test') {
             steps {
-                sh 'npm run cy:run'
+                bat 'npm run cy:run'
             }
         }
         stage('Deploy') {
             steps {
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: 'mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'EBAC Report', reportTitles: '', useWrapperFileDirectly: true])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: 'mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'EBAC Report', reportTitles: '', useWrapperFileDirectly: true])
             }
         }
     }
 }
+/*
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                bat 'npm install'
+            }
+        }
+        stage('test') {
+            steps {
+                bat 'npm run cy:run'
+            }
+        }
+        stage('Deploy') {
+            steps {
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: 'mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'EBAC Report', reportTitles: '', useWrapperFileDirectly: true])
+            }
+        }
+    }
+}
+/*
