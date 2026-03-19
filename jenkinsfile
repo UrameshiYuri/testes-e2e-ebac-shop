@@ -3,27 +3,6 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'npm install'
-            }
-        }
-        stage('test') {
-            steps {
-                sh 'npm run cy:run'
-            }
-        }
-        stage('Deploy') {
-            steps {
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: 'mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'EBAC Report', reportTitles: '', useWrapperFileDirectly: true])
-            }
-        }
-    }
-}
-/*
-pipeline {
-    agent any
-    stages {
-        stage('Setup') {
-            steps {
                 bat 'npm install'
             }
         }
@@ -39,4 +18,3 @@ pipeline {
         }
     }
 }
-/*
