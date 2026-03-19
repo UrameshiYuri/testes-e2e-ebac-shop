@@ -1,16 +1,14 @@
 pipeline {
-    agent any {
-        docker { image 'node:18' }
-    }
+    agent any
     stages {
         stage('Setup') {
             steps {
-               sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('test') {
             steps {
-                sh 'npm run cy:run'
+                bat 'npm run cy:run'
             }
         }
         stage('Deploy') {
