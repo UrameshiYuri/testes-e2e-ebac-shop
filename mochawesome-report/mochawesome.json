@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-16T16:35:23.171Z",
+    "end": "2026-07-16T16:35:28.407Z",
+    "duration": 5236,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "384cf2ec-0fe2-416e-a103-839408d386d4",
+      "title": "",
+      "fullFile": "cypress/integration/exercicio-e2e.spec.js",
+      "file": "cypress/integration/exercicio-e2e.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47257ca0-2d69-4934-bf46-6e93beb4edb4",
+          "title": "Exercicio - Testes End-to-end - Fluxo de pedido",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve fazer um pedido na loja Ebac Shop de ponta a ponta",
+              "fullTitle": "Exercicio - Testes End-to-end - Fluxo de pedido Deve fazer um pedido na loja Ebac Shop de ponta a ponta",
+              "timedOut": null,
+              "duration": 5215,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//TODO",
+              "err": {},
+              "uuid": "25ea72c3-b2ee-4fda-98b2-9f0ec79f6f75",
+              "parentUUID": "47257ca0-2d69-4934-bf46-6e93beb4edb4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25ea72c3-b2ee-4fda-98b2-9f0ec79f6f75"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5215,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
